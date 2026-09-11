@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aero-thermo-tester"
+version = "0.1.0"
+description = "Vectorized aero-thermo mesh analysis"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "pyyaml>=6.0"
+]
+
+[project.optional-dependencies]
+ui = ["streamlit>=1.30", "pyvista>=0.43"]
+
+[tool.setuptools]
+package-dir = {"" = "src/python"}
+
+[tool.setuptools.packages.find]
+where = ["src/python"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src/python"]
+testpaths = ["tests"]
