@@ -1,0 +1,29 @@
+# Default physical constants and simulation parameters.
+# Load this in src/python/utils rather than hardcoding values in the physics
+# modules -- keeps every default in one place and easy to tune.
+
+air:
+  density_kg_m3: 1.225              # sea level, 15C
+  dynamic_viscosity_pa_s: 1.81e-5
+  thermal_conductivity_w_mk: 0.026
+  prandtl_number: 0.71
+  specific_heat_ratio: 1.4          # gamma
+  freestream_temperature_k: 288.15  # 15C
+  speed_of_sound_m_s: 340.3
+
+simulation:
+  default_wind_speed_m_s: 20.0
+  default_wind_direction: [1.0, 0.0, 0.0]
+  cp_max_classical: 2.0             # classical Newtonian limit, see docs/formulas.md #2
+  default_wall_temperature_k: 288.15
+
+mesh:
+  default_resolution: medium        # low / medium / high -- define meaning in geometry module
+
+weak_point_analysis:
+  top_n: 5
+  pressure_weight: 0.6
+  curvature_weight: 0.4
+
+ui:
+  default_object: sphere

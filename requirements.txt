@@ -1,0 +1,26 @@
+# Core numerics
+numpy>=1.26
+scipy>=1.11
+pandas>=2.2
+
+# Geometry / mesh handling
+trimesh>=4.0
+
+# Visualization
+matplotlib>=3.8
+pyvista>=0.43
+plotly>=5.20
+
+# UI
+streamlit>=1.32
+# stpyvista>=0.9        # uncomment if embedding pyvista directly in Streamlit
+
+# Performance / parallel computing
+numba>=0.59
+joblib>=1.3
+
+# Config
+pyyaml>=6.0
+
+# Testing
+pytest>=8.0

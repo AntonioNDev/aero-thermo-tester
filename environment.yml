@@ -1,0 +1,20 @@
+name: aero-thermo-tester
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - pandas
+  - trimesh
+  - matplotlib
+  - pyvista
+  - plotly
+  - streamlit
+  - numba
+  - joblib
+  - pyyaml
+  - pytest
+  - pip
+  - pip:
+      - stpyvista
