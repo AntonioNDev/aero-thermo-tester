@@ -1,0 +1,16 @@
+flow:
+  gamma: 1.4
+  pressure_pa: 101325.0
+  temperature_k: 288.15
+  density_kg_m3: 1.225
+  viscosity_pa_s: 1.7894e-5
+
+heating:
+  prandtl: 0.71
+  recovery_factor: 0.89
+  heat_transfer_coefficient_w_m2k: 35.0
+
+analysis:
+  weak_point_gradient_weight: 0.6
+  weak_point_curvature_weight: 0.4
+  weak_point_threshold: 0.65
